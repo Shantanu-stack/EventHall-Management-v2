@@ -24,6 +24,9 @@ A full-stack event management application built for Indian event halls to manage
 ---
 
 ## Screenshots 📸
+** Adding Event 
+
+<img width="1916" height="865" alt="Screenshot 2026-03-07 182430" src="https://github.com/user-attachments/assets/67cb08c0-c173-4d72-a55a-6ef4d6a6678d" />
 
 ---
 
