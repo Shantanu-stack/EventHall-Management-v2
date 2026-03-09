@@ -24,11 +24,15 @@ A full-stack event management application built for Indian event halls to manage
 ---
 
 ## Screenshots 📸
-** Adding Event 
+-** Adding Event 
 
 <img width="1916" height="865" alt="Screenshot 2026-03-07 182430" src="https://github.com/user-attachments/assets/67cb08c0-c173-4d72-a55a-6ef4d6a6678d" />
+-** SQl Database
+<img width="1460" height="699" alt="Screenshot 2026-03-06 173551" src="https://github.com/user-attachments/assets/1dd0c593-075c-4b5c-815d-4ed9708d2b4a" />
+-
+--** Docker Running
+<img width="1570" height="898" alt="image" src="https://github.com/user-attachments/assets/e794fe1f-3e22-47bc-bdfe-3d59e22b805f" />
 
----
 
 ## 🛠️ Tech Stack
 
