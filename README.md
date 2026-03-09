@@ -23,6 +23,10 @@ A full-stack event management application built for Indian event halls to manage
 
 ---
 
+## Screenshots 📸
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
