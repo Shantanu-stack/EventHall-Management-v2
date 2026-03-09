@@ -33,6 +33,9 @@ A full-stack event management application built for Indian event halls to manage
 --** Docker Running
 <img width="1570" height="898" alt="image" src="https://github.com/user-attachments/assets/e794fe1f-3e22-47bc-bdfe-3d59e22b805f" />
 
+ --** Generating PDF Invoice
+ <img width="1858" height="967" alt="image" src="https://github.com/user-attachments/assets/fa98af8a-75d6-429a-85f5-0da0eb309024" />
+
 
 ## 🛠️ Tech Stack
 
