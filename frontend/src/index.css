@@ -1,0 +1,46 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --deep: #1a0a2e;
+  --surface: #12001f;
+  --card: #1e0a35;
+  --border: rgba(201,168,76,0.2);
+  --text: #f0e6ff;
+  --muted: #a090b8;
+  --red: #e05c5c;
+  --green: #4caf82;
+  --blue: #5c9de0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--surface);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
+
+input, select, textarea {
+  font-family: 'DM Sans', sans-serif;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 100%;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--gold);
+}
+select option { background: var(--deep); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }

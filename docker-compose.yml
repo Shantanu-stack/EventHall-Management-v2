@@ -1,0 +1,41 @@
+services:
+  mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass123
+      MYSQL_DATABASE: eventhall_db
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./event
+    restart: always
+    ports:
+      - "8081:8080"
+    environment:
+      DB_URL: jdbc:mysql://mysql:3306/eventhall_db?createDatabaseIfNotExist=true
+      DB_USER: root
+      DB_PASS: rootpass123
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        - VITE_API_URL=/api
+    restart: always
+    ports:
+      - "81:80"
+    depends_on:
+      - backend
+
+volumes:
+  mysql_data:
